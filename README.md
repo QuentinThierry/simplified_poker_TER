@@ -1,1 +1,1 @@
-simplified_poker_TER
+run with python3 to execute
