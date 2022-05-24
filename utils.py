@@ -20,10 +20,7 @@ def change_proba_of_table(table, row, column, recompense, actionAliceIndice):
         proba = table[row][actionAliceIndice]
     else:
         proba = table[row] #alice
-        
-    # if (proba[column] == 0 and delta < 0) or (proba[column] >= 0.999999 and delta > 0) or delta == 0:
-    #     return
-    
+
     ancienneProbaCol = proba[column]
     
     proba[column] = (ancienneProbaCol * (1-alpha)) + (alpha * recompense)
